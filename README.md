@@ -21,4 +21,34 @@
         4. Final Hand-Shake: The Final Deployement is the phase where a UAT(User Acceptance Tests) process will begin, a UAT Engineer from the Customer's end will test the Application manually to make the App work in the Environment which he/she uses every day. Here the App is tested by the End users of the Application and give the feedback. Once the Application evaluation is complete, the Customer gives the Closure letter which means that Project has been Completed Successfully.
     - QA Teams, Product Owners, Product evaluators, UAT Engineers and Customer Users will be the part of the Operations Teams. 
         
+- Challenges in this Setup:
+    - Many a time, the Ops Team are not aware of the Technical aspects in the Application like packages, its versions and its venerabilities even though they might be minor ones. 
+    - The Integration Config files are very huge in no, especially if U R working on multiple servers, and it might take days to resolve any bugs. 
+
+- The Solution for all the above problems is the Collaborative work of both the Developer team and the Operations Team: Dev + Ops: DevOps. 
+- With this, the Ops Team dont have any surprises. Both the teams do a collaborative work on understanding the Application, its execution process, and involve themselves on many developmental and deployemental issues, finally helping each other in understanding both the sides of the Project Execution. 
+
+### Why DevOps?
+Earlier, the Dev Team and the Ops Team were working in Complete Isolation. Here Testing and the Deployment activity were something that was done after the Complete Development. With this, it consumed more time than the work done with short builds. Unexpected challenges used to pop up with no clue from the Dev Team, as even the Dev Team were unware of the Environment settings of the Customer side. Many a time, with the manual code deployment, there were tendencies of human errors, sometimes taking days together to resolve it. 
+With Devops, Software delivery is automated which will be fast and easy. It increases the Deployment easiness and also reduces the Complexity. It is estimated that with DevOps methodology, the deployment time has been reduced by 20% of the total Application delivery. Most of the procedures are automated with high end tools to do major jobs. These tools like Git(Code Repo), JENKINS(CIT), Kubernetes(Containerization), Docker(VM like Containers) that helps in building the Application with little scope of errors.
+
+### Benifits of DevOps?
+1. Productivity: As the Dev Team and the Ops team will work in Collaboration at all levels, any software that is created thru' this cycle of events will be under the supervision of a DevOps Engineer. Building, Testing and Integration wil be the part of this cycle. Any failures that pops up at any level can be identified and make it known to all the stake holders of the Application. So all the members can immediately work on those bugs and resolve it as early as possible. With this, teams are aware of the challenges and they work to ensure that those challenges are met with success. It gives low failure rates compared to any other Deployment methodologies. 
+2. Reproducability: As we maintain the versioning of the Applications, any recent build failures can be rolled back for the stable version and can be reproduced without affecting the Environment. 
+3. Maintainability: With large no of Tools available for the Devops, and most of these tools are open sourced and free licensed, it is easy to maintain. To store the Code, we can use GIT, to build the Application Cycle we use JENKINS, to handle Issues we use JIRA, to place the Code in the Production like Environment we use Docker and manage multiple Dockers thru a containerization tool like Kubernetes(K8s). To place the Application on an Environment that can be reliable and accessible anywhere in the world we have Cloud Computing Softwares maintained by well trusted Organizations like Google, Microsoft, Amazon and Oracle. 
+
+### What kind of Apps can use DevOps?
+1. Large scaled Distributed Computing Apps like E-Comm portals, Apps that work with IoT and Cloud are suited to be developed using DevOps. It can also be used by App Developers who develop Apps using Agile Development methodologies where UR Large App is cut into small but rich in feature tasks and subtasks called as Sprints and builds are expected to be small and frequent. In such cases, the changes are expected to be frequent and Devops tools helps in automating these processes effectively with little human interventions. 
+
+### DevOps Automation Tools:
+After the Development is complete, the ops teams need resources or tools to build, test, integrate and deploy the Application. For these things, we dont need the Developer team support. These works can be done by Non-Developer community but with little or fair amount of knowledge on the technology. <br>
+Many a time, these tasks are routine in nature and we dont a real time resource to monitor it. We have tools to do the job.
+Deployment tools: Jenkins
+Logging Tools: Log4J and Splunk
+Containers: Dockers
+Containerization Tools: Kubernetes
+Testing Tools: Selenium and Chai
+-------------------------------------Day 2---------------------------------------
+# Docker
+
 
