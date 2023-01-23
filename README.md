@@ -6,12 +6,12 @@
 - There are 2 Teams that collaborate in a Project Life Cycle. Developer Team and Operations Team.
 - What is the Development Team?
     - Development means the following things:
-        a. Requirement Gathering -> The Team acquires all the inputs from the Customer required for the Application Development. 
-        b. Design -> Based on the inputs given by the Customer, the team will design a HLDC and LLDC that tells about the App, Technology involved, reasons on the technology, its features, limitations, and if required a POC(Proof of Concept). If required, any additional Show Stoppers will be explained to the Customer and take feedback on the alternate solutions. 
-        c. Unit Testing -> Unit tests will be created to provide the test cases for the Behavior of the Application and accordingly the Application will be developed. This is called as BDD(Behavioral Driven Development). Usually this will be a part of the build cycle of the Application. 
-        d. Coding -> The Time where the Application creation happens. The teams will split all their tasks into Sprints using Agile Development Methodology and develop the Code accordingly and share the completed code into a Code Repo(Git, BitBucket, TFS) 
-        e. Integration Process-> Final Build of the Application with Release mode and the bugs are fixed and all the Configs are set and the required dependencies are placed in the Application. 
-        f. Deployment -> The Deployment will be done with the Support of IT Engineers who take care of the Installation, Usage of the Application(Operations) in the Customer's Prospective.
+        1. Requirement Gathering -> The Team acquires all the inputs from the Customer required for the Application Development. 
+        2. Design -> Based on the inputs given by the Customer, the team will design a HLDC and LLDC that tells about the App, Technology involved, reasons on the technology, its features, limitations, and if required a POC(Proof of Concept). If required, any additional Show Stoppers will be explained to the Customer and take feedback on the alternate solutions. 
+        3. Unit Testing -> Unit tests will be created to provide the test cases for the Behavior of the Application and accordingly the Application will be developed. This is called as BDD(Behavioral Driven Development). Usually this will be a part of the build cycle of the Application. 
+        4. Coding -> The Time where the Application creation happens. The teams will split all their tasks into Sprints using Agile Development Methodology and develop the Code accordingly and share the completed code into a Code Repo(Git, BitBucket, TFS) 
+        5. Integration Process-> Final Build of the Application with Release mode and the bugs are fixed and all the Configs are set and the required dependencies are placed in the Application. 
+        6. Deployment -> The Deployment will be done with the Support of IT Engineers who take care of the Installation, Usage of the Application(Operations) in the Customer's Prospective.
     - Developer teams include Directors, Project Managers, Team Leads and Tech leads, Sr. Software Engineers, Jr. Software Engineers and Testers.
 - What are the Operations Team ?
     - The OPs Team will do the following things:
