@@ -43,11 +43,11 @@ With Devops, Software delivery is automated which will be fast and easy. It incr
 ### DevOps Automation Tools:
 After the Development is complete, the ops teams need resources or tools to build, test, integrate and deploy the Application. For these things, we dont need the Developer team support. These works can be done by Non-Developer community but with little or fair amount of knowledge on the technology. <br>
 Many a time, these tasks are routine in nature and we dont a real time resource to monitor it. We have tools to do the job.
-- Deployment tools: Jenkins
-- Logging Tools: Log4J and Splunk
-- Containers: Dockers
-- Containerization Tools: Kubernetes
-- Testing Tools: Selenium and Chai
+    - Deployment tools: Jenkins
+    - Logging Tools: Log4J and Splunk
+    - Containers: Dockers
+    - Containerization Tools: Kubernetes
+    - Testing Tools: Selenium and Chai
 -------------------------------------Day 2---------------------------------------
 # Docker
 
