@@ -50,5 +50,27 @@ Many a time, these tasks are routine in nature and we dont a real time resource 
     - Testing Tools: Selenium and Chai
 -------------------------------------Day 2---------------------------------------
 # Docker
+# Docker
+It is a centralized platform for packaging, deploying and running the Applications. 
+The Application that U developed can be placed in a closed Environment with all the required infrastructure to make UR Application called as Containers. The Container can be shared to all the Customers and even placed in Cloud. The Customers will use the Containers as their place of work and start using it. 
 
+### What is Docker?
+It is an Open sourced platform to create and deploy UR applications on different platforms without a need to a real time OS where the Host Environment's OS will be taken as its own OS. Dockers use a concept called Containers on the Host OS to run UR Applications. 
+
+### Installing Docker on Windows
+1. Install the WSL(Windows SubSystem for Linux) using the wsl --install. U should be running the Cmd as Administrator. 
+2. Download the Docker Desktop App from the website https://www.docker.com/products/docker-desktop/
+3. Continue with the installation process, accept defaults and restart UR Machine. 
+4. Docker immediately starts on bootup and wait for the Application to start. 
+5. The purpose of WSL is only for Windows OS. It provides a Linux kernel on Windows which is used by Docker to Run. 
+
+### Download the Mongodb Container into Docker from DockerHub
+1. Run the following Command:
+```
+docker -run -it --rm --name mongoContainer mongo:latest mongod
+```
+2. In another terminal U run the following command
+```
+docker exec -it mongo mongosh
+```
 
