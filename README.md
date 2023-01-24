@@ -67,7 +67,7 @@ It is an Open sourced platform to create and deploy UR applications on different
 ### Download the Mongodb Container into Docker from DockerHub
 1. Run the following Command:
 ```
-docker -run -it --rm --name mongoContainer mongo:latest mongod
+docker run -it --rm --name mongo mongo:latest mongod
 ```
 2. In another terminal U run the following command
 ```
