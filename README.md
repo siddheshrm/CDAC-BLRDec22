@@ -43,13 +43,12 @@ With Devops, Software delivery is automated which will be fast and easy. It incr
 ### DevOps Automation Tools:
 After the Development is complete, the ops teams need resources or tools to build, test, integrate and deploy the Application. For these things, we dont need the Developer team support. These works can be done by Non-Developer community but with little or fair amount of knowledge on the technology. <br>
 Many a time, these tasks are routine in nature and we dont a real time resource to monitor it. We have tools to do the job.
-    - Deployment tools: Jenkins
-    - Logging Tools: Log4J and Splunk
-    - Containers: Dockers
-    - Containerization Tools: Kubernetes
-    - Testing Tools: Selenium and Chai
+Deployment tools: Jenkins
+Logging Tools: Log4J and Splunk
+Containers: Dockers
+Containerization Tools: Kubernetes
+Testing Tools: Selenium and Chai
 -------------------------------------Day 2---------------------------------------
-# Docker
 # Docker
 It is a centralized platform for packaging, deploying and running the Applications. 
 The Application that U developed can be placed in a closed Environment with all the required infrastructure to make UR Application called as Containers. The Container can be shared to all the Customers and even placed in Cloud. The Customers will use the Containers as their place of work and start using it. 
@@ -77,4 +76,40 @@ docker -run -it --rm --name mongoContainer mongo:latest mongod
 ```
 docker exec -it mongo mongosh
 ```
+### Create Docker Images:
+#### Docker Image on a Java Application:
+1. Create a new Folder and name it as per your requirement(In our case, its Simple Java App) 
+docker build -t java-app
+2. Create the required Java files for UR Application. 
+3. Create a Dockerfile which is basically a text file with no extensions and the name must be Dockerfile. 
+4. Provide all the instructions required for the dependencies for the Container.(File shared)
+5. Build the Docker Image using the command:
+```
+docker build -t java-app . 
+``` 
+6. U can check the image being loaded into the Docker Desktop before moving to the final step.
+7. Run the command to execute the Program from Docker:
+```
+docker run java-app
+```
+#### Options:
+1. -t ->Flag to tell Docker to allocate the Virtual Terminal within the Container to start UR Program.
+2. -i ->Flat to tell the Docker to execute the Application in interactive mode. 
 
+### How real Apps work?
+1. Developer builds the code in his environment and get it approved by PR and TR(PRTI)=>Personal Review and Team Inspection.
+2. The Developer pushes the code the Code Repository(Git, BitBucket or TFS).
+3. Once the Code is pushed, a Continuous Integration Tool(CIT) will come into picture which pulls the code from the Repo, builds in a containized environment or production Environment and on post build, it will push the code the Container like Docker and place it in the Cloud.
+
+--------------------------------------JENKINS------------------------------------------------
+# Jenkins
+### What is Continuous Integration?
+An Orchestration of a chain of activities to perform continous integration of various components of the application in an automated fashion that helps in pipelining the application deployment and operational Sequence. It is responsible to keep track on any code push that happens to the repo, there by pulling the Code, building it, testing it(Runs thru all the Unit tests and E2e Tests), documenting and finally deploying the Application on the operational System. <br/>
+One of the popular CI tool is JENKINS. 
+
+### How does it work?
+Jenkins is basically a server side Web Application that will run on a web server like Apache Tomcat Server. It can run on multiple platforms like Windows, Mac or Linux. To the use the Jenkins, we need pipelines (Its a series of instructions that Jenkins should do once it sees an change in the Code the Repo) and jenkins will read the pipeline and performs the tasks as defined by the pipeline. The pipeline keeps track of the Repo all the time and will be available 24 hrs within the system. It is a continuous operation that happens like a triggering of actions with steps completing one after the other. Jenkins internally has tools to build, test, monitor, raise reports, update changes and even trigger emails to the stake holders of the Application. 
+
+### Install JENKINS
+1. U should install JDK 8.0 or later. Set the Environment Variables like JAVA_HOME, JRE_HOME and Path. 
+2. Download the JENKINS from the Jenkins Site. 
