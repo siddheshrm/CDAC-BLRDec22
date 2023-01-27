@@ -1,4 +1,4 @@
-    # DevOps Training
+# DevOps Training
     ### Course Outline:
     - DevOps + Docker + Jenkins + K8s
 
@@ -20,7 +20,7 @@
             3. Integrations with various servers : Includes the Plumbing work of integrating various Servers like Database, Application, Sharepoint, Cloud servers. All these will interact to UR Application representable as one SINGLE UNIT. 
             4. Final Hand-Shake: The Final Deployement is the phase where a UAT(User Acceptance Tests) process will begin, a UAT Engineer from the Customer's end will test the Application manually to make the App work in the Environment which he/she uses every day. Here the App is tested by the End users of the Application and give the feedback. Once the Application evaluation is complete, the Customer gives the Closure letter which means that Project has been Completed Successfully.
         - QA Teams, Product Owners, Product evaluators, UAT Engineers and Customer Users will be the part of the Operations Teams. 
-            
+
     - Challenges in this Setup:
         - Many a time, the Ops Team are not aware of the Technical aspects in the Application like packages, its versions and its venerabilities even though they might be minor ones. 
         - The Integration Config files are very huge in no, especially if U R working on multiple servers, and it might take days to resolve any bugs. 
@@ -134,41 +134,41 @@
     6. U can set to build the Application periodically by setting the HR MM DAYS WEEKS. Refer the Help. 
 
     ------------------------------Microservices------------------------------------------------------------
-Microservices are dividing UR large scale Application into small units which are independent of another. In our current scenarios, we might develop very large and complex projects that take lot of time to build and deploy. The Code building proccess would take more time and the deployment will be difficult. To reduce these complexities, most organizations are moving towards microservices where UR Application is cut into small independently executable services that can be contained inside a container like Docker and publised. This will be very easy to develop as U will be creating smaller modules and services are small but effective. Any issues with one service will not affect the other.
-Microservices can be created on various technologies like Java, .NET and open source. 
-We will use Microservices using .NET CORE and Docker to publish. 
+    Microservices are dividing UR large scale Application into small units which are independent of another. In our current scenarios, we might develop very large and complex projects that take lot of time to build and deploy. The Code building proccess would take more time and the deployment will be difficult. To reduce these complexities, most organizations are moving towards microservices where UR Application is cut into small independently executable services that can be contained inside a container like Docker and publised. This will be very easy to develop as U will be creating smaller modules and services are small but effective. Any issues with one service will not affect the other.
+    Microservices can be created on various technologies like Java, .NET and open source. 
+    We will use Microservices using .NET CORE and Docker to publish. 
 
-Key Questions?
-What is the software required?
-Windows 10 or later.
-Visual Studio 2017 or later that supports Docker tools. 
-.NET CORE SDK for platform independence. 
-Docker for Windows. 
-Docker Tools
+    Key Questions?
+    What is the software required?
+    Windows 10 or later.
+    Visual Studio 2017 or later that supports Docker tools. 
+    .NET CORE SDK for platform independence. 
+    Docker for Windows. 
+    Docker Tools
 
-Why should we use microservices instead of a monolithic Approach?
-Microservices is to develop small services that each service runs in its own process. We develop the Microservices instead of one big monolithic Service for many benifits that include:
-Microservices are smaller in size. 
-It is easy to develop, deploy and debug, because a fix only needs to be deployed onto the microservice with a bug instead of across the board. 
-It can be scaled quickly and can be reused in multiple projects.
-With the size, U can contain it inside containers like Docker. 
-Each microservice is independent of each other, if one of the services fail, there is a little risk of the full application shutting down, not a real Show stopper.
+    Why should we use microservices instead of a monolithic Approach?
+    Microservices is to develop small services that each service runs in its own process. We develop the Microservices instead of one big monolithic Service for many benifits that include:
+    Microservices are smaller in size. 
+    It is easy to develop, deploy and debug, because a fix only needs to be deployed onto the microservice with a bug instead of across the board. 
+    It can be scaled quickly and can be reused in multiple projects.
+    With the size, U can contain it inside containers like Docker. 
+    Each microservice is independent of each other, if one of the services fail, there is a little risk of the full application shutting down, not a real Show stopper.
 
-Why should we use .NET CORE?
-It's opensource, has a large no of Helpful APIs for developing high performance scalable Apps. With VS, it is faster to develop the APplications and has lot of UI support for dependency injections and cloud based Configurations. 
+    Why should we use .NET CORE?
+    It's opensource, has a large no of Helpful APIs for developing high performance scalable Apps. With VS, it is faster to develop the APplications and has lot of UI support for dependency injections and cloud based Configurations. 
 
-Why should we use Docker?
-Dockers help in containerization of UR Apps into a precreated environment which is easy to create, deploy and run the Applications using Containerization apps. 
-They are light weight and takes less time to start compared to traditional servers. 
-They are low cost and increases the performance with proper resource management. 
-Unlike VMs, there is no need to preallocate any RAMs for UR Containers.
+    Why should we use Docker?
+    Dockers help in containerization of UR Apps into a precreated environment which is easy to create, deploy and run the Applications using Containerization apps. 
+    They are light weight and takes less time to start compared to traditional servers. 
+    They are low cost and increases the performance with proper resource management. 
+    Unlike VMs, there is no need to preallocate any RAMs for UR Containers.
 
-How to build a Microservice?
-1. Visual Studio 2017 or later IDE should be selected. Create a Project of the type ASP.NET CORE WEB API Project. 
-2. Create the Data classes required for the Application. 
-3. Create the Controllers required for the Application.
-4. Right click on the Project to create the Docker File by the VS IDE. 
-5. Build and Execute the Application. 
-6. Test the App on Postman by giving the required Port no. 
-7. For Interacting with SQL server, U might create the SQL server instance inside another Docker container and compose the Orchestration feature. Refer the Documents in the internet. 
-----------------------------------------Intro to K8s---------------------------------------------------
+    How to build a Microservice?
+    1. Visual Studio 2017 or later IDE should be selected. Create a Project of the type ASP.NET CORE WEB API Project. 
+    2. Create the Data classes required for the Application. 
+    3. Create the Controllers required for the Application.
+    4. Right click on the Project to create the Docker File by the VS IDE. 
+    5. Build and Execute the Application. 
+    6. Test the App on Postman by giving the required Port no. 
+    7. For Interacting with SQL server, U might create the SQL server instance inside another Docker container and compose the Orchestration feature. Refer the Documents in the internet. 
+    ----------------------------------------Intro to K8s---------------------------------------------------
