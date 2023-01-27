@@ -174,3 +174,40 @@ Unlike VMs, there is no need to preallocate any RAMs for UR Containers.
 7. For Interacting with SQL server, U might create the SQL server instance inside another Docker container and compose the Orchestration feature. Refer the Documents in the internet. 
 ----------------------------------------Intro to K8s---------------------------------------------------
 # Kubernetes
+It is a container management system developed by CNCF(Cloud Native Computimg Foundation) that is developed by Google Platform. It's main purpose is helping in the managing the Containerized Applications on various platforms like Cloud, Local and Virtual Environments. It is said to be one of the most flexible Containerization tool that is created to deploy Complex applications running on Clusters of 100s of individual Servers. This is purely a Cloud based Environment. It Comes with Automated Deployment, Scalling of Apps to multiple users, and operating the Applications across multiple Clusters. It is created for Container specific Infrastructure.  
+
+### Scenario:
+1. U create UR App code in the form of a Microservice that has to be built and placed in a Docker Container. U take the support of the CI Tool like Jenkins that builds UR Application and places the App Service in a Docker Container with all the software and the hardware infra requried for the service to expose.
+2. In a real time scenario, there canbe 100s of such services each contained inside individual Containers. Each service works independently and each service has its own container.
+3. K8s will tbe the container management tool that will have a database of containers maintained in Cloud based Environment. It ensures safety and reliability with content available all the time. It uses a concept called primary and secondary clusters that will be available even during emergencies. If the Primary Cluster fails for some unknown reason, the secondary cluster will immediately take over to provide the services all the time. 
+
+### How K8s Work?
+- It is a linux based Kernel that share lots of resources required to manage UR Complex Applications. It is primarily used for Distributed Computing Applications where it will abstract(hide) the underlying hardware servers and offers std and consistant UI for UR Application management. This UI will be used by the DevOps engineer. It will contain a DASHBOARD of servers and containers that one can monitor it from one common place. Its tools helps the DevOps Engineer to manage the resources like removing unnessasary hardware for one Cluster and allocating it to another Application that might need the most and likewise for all the other infra. 
+
+### Features: 
+1. Automatic scheduling of App processes. 
+2. Integrate with other CI tools for Continuous Development, Integration and Deployment. 
+3. Automatic Rollouts and Rollbacks.
+4. System will be loosely coupled where every Unit works independently and one component's failure will not affect the other. 
+5. Application centric Management thru nice Dashboards that will help the Engineer monitor it nicely. 
+6. High Density of Resource Utilization.
+7. Environment Consistency: UR App will run on all Conditions. If there are any failures in any of the servers, the Environment should provide a backup server to run the show without stopping it. 
+
+- With all the above features, the Customer will never feel the burden of application slowdown or failures on the infra point of view. 
+
+### Architecture of K8s
+Basically K8s follows cluster architecture. It maintains a server of servers scaled across the world to manage UR Applications. Any Container that U place inside the K8s server will have primary and secondary servers. If the Primary server is down, the secondary server will provide the backup.  If UR Application running on the Primary server crashes, then the secondary serer will load the Application once again to make the services available to the Customer. 
+
+### Key Terms:
+- POD: It is the smallest Unit of a K8s Application. It can be a single App that is running in one or more groups of containers. Each POD Contains one or more containers that can be one Application. 
+- NODE: Node is a single Host that has multiple PODs in it. It runs on a single Physical VM. We also call these Nodes as Minions. Clients will consume the services from the PODS available thru NODES.
+- SERVER: The Server in K8s Terminlogoy is a location collection of PODS that work together for a certain functionality of UR Application. Server provides the services thru SUBSCRIPTIONS made by the User.
+- CLUSTER:  is a group of Applications hosted inside one or more servers which we call it as CLUSTER. Cluster is basically a collection of servers that help in managing and sharing the infrastructure among UR Application services: RAM, CPU, DISK and devices into one BIG USABLE POOL.
+- MASTER: Collection of Components that make the Control panel of the K8s. The Master will be like Admin to the System. It will be maintained by K8s Admin who work on these clusters and make decisions like Scheduling, Responding to the notifications posted by the servers and manage the servers of the Clusters. 
+- NAMESPACE: Is a logical Environment that will be used to divide the Clusters on a logical grouping. 
+
+### Components of the Master Node: 
+1. Master is the actual server of the K8s. It internally has multiple processes that are required to run and manage the Clusters. 
+2. API-SERVER is one such process which provides the services externally to the End Applications. It is considered as GATEWAY to the Clusters. App Developers interact with the API server to get the required services that will be consumed by their Applications. 
+3. CONTROLLER MANAGER overviews on what is happening in the Clusters and ensure all the maintainence work is done thru this Controller. 
+4. SCHEDULER: Internal abstraction on scheduling the jobs within the K8s server. It is maintained by one more process called ETCD. ETCD is a distributed reliable Key-value stores for data of a distributed System. 
