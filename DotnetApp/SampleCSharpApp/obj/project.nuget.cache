@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "aeNxuwJo4Sg1QRoE6KkG4l2Nv+NdSE4Zts9C8Vs2jWqL9NQSSCeiNR4lm/Ha2ii0LiA4RMaYetGzKK7w7DnHVg==",
+  "success": true,
+  "projectFilePath": "C:\\Trainings\\CDAC-BLR\\Dec-22\\DevOps\\DotnetApp\\SampleCSharpApp\\SampleCSharpApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\phani\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512"
+  ],
+  "logs": []
+}
