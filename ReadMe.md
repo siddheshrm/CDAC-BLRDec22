@@ -1,8 +1,8 @@
 # DevOps Training
-    ### Course Outline:
-    - DevOps + Docker + Jenkins + K8s
+### Course Outline:
+- DevOps + Docker + Jenkins + K8s
 
-    ### What is DevOps?
+### What is DevOps?
     - There are 2 Teams that collaborate in a Project Life Cycle. Developer Team and Operations Team.
     - What is the Development Team?
         - Development means the following things:
